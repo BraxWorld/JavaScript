@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment-01</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+
+    <script>
+        function changeWords2()
+        {
+            document.getElementById('words').innerHTML="IT IS ESPEON!!!!!"
+        }
+    </script>
+
+</head>
+<body>
+    <header><h1 id="mainheader">Java Assessment-01</h1></header>
+
+    <main>
+        <p>click the buttons to change the spinning pokemon!</p>
+        <img src="images/spinning gengar.gif" alt="pictures" id="mainpic">
+        <div class="buttons">
+            <button onclick="document.getElementById('mainpic').src='images/spinning gengar.gif'">gengar</button>
+            <button onclick="document.getElementById('mainpic').src='images/spinning golbat.gif'">golbat</button>
+            <button onclick="document.getElementById('mainpic').src='images/spinning espeon.gif'">espeon</button>
+        </div>
+
+        <p id="words"></p>
+        <script>
+            document.getElementById("words").innerHTML="One of these is SHINY. Can you guess which one?"
+        </script>
+
+        <div class="buttons">
+            <button type="button" onclick="changeWords()">See answer from external</button>
+            <button type="button" onclick="changeWords2()">See answer from head of HTML</button>
+        </div>
+
+        <div class="buttons">
+            <button type="button" onclick="document.getElementById('mainpic').style.width='600px'">make bigger</button>
+            <button type="button" onclick="document.getElementById('mainpic').style.width='300px'">make normal</button>
+            <button type="button" onclick="document.getElementById('mainpic').style.width='100px'">make smaller</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="document.getElementById('mainpic').style.display='block'">show</button>
+            <button onclick="document.getElementById('mainpic').style.display='none'">hide</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="document.getElementById('mainheader').style.color='red'">red</button>
+            <button onclick="document.getElementById('mainheader').style.color='blue'">blue</button>
+            <button onclick="document.getElementById('mainheader').style.color='black'">black</button>
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+</body>
+</html>
