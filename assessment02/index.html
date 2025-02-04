@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment-02</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+    <header><h1>Order Here!</h1></header>
+    <main>
+        <form>
+            <div class="top">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fname"><br>
+            </div>
+            <div class="drinks">
+                <h2>DRINKS</h2>
+                <label for="cokeDrink">Coke</label>
+                <input type="number" id="cokeDrink" name="cokeDrink" min="0" value="0"><br>
+                <label for="dewDrink">Mtn.Dew</label>
+                <input type="number" id="dewDrink" name="dewDrink" min="0" value="0"><br>
+                <label for="pepperDrink">Dr.Pepper</label>
+                <input type="number" id="pepperDrink" name="pepperDrink" min="0" value="0"><br>
+                <label for="spriteDrink">Sprite</label>
+                <input type="number" id="spriteDrink" name="spriteDrink" min="0" value="0"><br>
+                <label for="lemonDrink">Lemonaide</label>
+                <input type="number" id="lemonDrink" name="lemonDrink" min="0" value="0"><br>
+            </div>
+            <div class="sandwiches">
+                <h2>Sandwiches</h2>
+                <label for="hamSami">Ham Sandwich</label>
+                <input type="number" id="hamSami" name="hamSami" min="0" value="0"><br>
+                <label for="turkeySami">Turkey Sandwich</label>
+                <input type="number" id="turkeySami" name="turkeySami" min="0" value="0"><br>
+                <label for="italianSami">Italian Sandwich</label>
+                <input type="number" id="italianSami" name="italianSami" min="0" value="0"><br>
+                <label for="burgerSami">Burger</label>
+                <input type="number" id="burgerSami" name="burgerSami" min="0" value="0"><br>
+                <label for="veggieSami">Veggie Sandwich</label>
+                <input type="number" id="veggieSami" name="veggieSami" min="0" value="0"><br>
+            </div>
+            <div class="sides">
+                <h2>Sides/Desert</h2>
+                <label for="friesSide">Fries</label>
+                <input type="number" id="friesSide" name="friesSide" min="0" value="0"><br>
+                <label for="mozzarellaSide">Mozzarella Sticks</label>
+                <input type="number" id="mozzarellaSide" name="mozzarellaSide" min="0" value="0"><br>
+                <label for="saladSide">Side Salad</label>
+                <input type="number" id="saladSide" name="saladSide" min="0" value="0"><br>
+                <label for="chocolateSide">Chocolate Ice Cream</label>
+                <input type="number" id="chocolateSide" name="chocolateSide" min="0" value="0"><br>
+                <label for="vanillaSide">Vanilla Ice Cream</label>
+                <input type="number" id="vanillaSide" name="vanillaSide" min="0" value="0"><br>
+            </div>
+            <div class="bottom">
+                <button type="button" onclick="calcTotal()">Total Order</button>
+                <h2>TOTAL</h2>
+                <p id="recipt"></p>
+            </div>
+        </form>
+    </main>
+    <footer><p>Braxton Angelo</p></footer>
+</body>
+</html>
