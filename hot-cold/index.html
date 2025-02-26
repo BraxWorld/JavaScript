@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot and Cold</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/scripts.js"></script>
+</head>
+<body onload="start()">
+    <header>
+        <h1>HOT OR COLD!</h1>
+        <h2>Guess a number between 1 and 100!</h2>
+    </header>
+    <main>
+        <h3>Guess below!</h3>
+        <form>
+            <label for="guess">Guess a number</label>
+            <input type="text" id="guess" width="5">
+            <button type="button" id="submit" onclick="calcGuess()">Submit</button>
+        </form>
+        <h1 id="indicator"></h1>
+    </main>
+</body>
+</html>
